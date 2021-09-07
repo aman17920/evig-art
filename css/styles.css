@@ -150,6 +150,22 @@ header .overlay {
   object-fit: cover;
 }
 
+#carousel-item {
+  object-fit: contain;
+}
+.whatsappicon {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 2;
+}
+.whatapp-icon {
+  width: 50px;
+}
+.drawings {
+  text-align: center;
+}
+
 /* Media Query for devices withi coarse pointers and no hover functionality */
 
 /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
@@ -164,17 +180,15 @@ header .overlay {
     display: none;
   }
 }
-#carousel-item {
-  object-fit: contain;
-}
-.whatsappicon {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-}
-.whatapp-icon {
-  width: 50px;
-}
-.drawings{
-  text-align: center;
+
+@media only screen and (max-width: 500px) {
+  .welcome-heading {
+    text-align: center;
+    font-size: 35px;
+  }
+  .responsive-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
 }
